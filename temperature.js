@@ -1,14 +1,12 @@
-// Get references to the elements
 let button1, button2, value, result;
 button1 = document.getElementById('C1_Container');
 button2 = document.getElementById('C2_Container');
 value = document.getElementById('TextBox1');
 
-// Function to perform temperature conversion
 function convertTemperature() {
-    const tempValue = parseFloat(value.value); // Get the value from the textbox and convert it to a number
-    const unitFrom = button1.value;  // Get the value from the first select dropdown
-    const unitTo = button2.value;    // Get the value from the second select dropdown
+    const tempValue = parseFloat(value.value); 
+    const unitFrom = button1.value;  
+    const unitTo = button2.value;    
 
     if (unitFrom === "celsius") {
         if (unitTo === "fahrenheit") {
